@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Simple Translator</title>
+
+    <meta name="description"
+        content="A simple translator built with HTML, CSS and JavaScript.">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome for Copy & Speaker icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Background -->
+    <div class="lt-bg">
+        <div class="lt-blob lt-blob-1"></div>
+        <div class="lt-blob lt-blob-2"></div>
+        <div class="lt-blob lt-blob-3"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="lt-nav">
+        <div class="lt-nav-inner">
+
+            <div class="lt-logo">
+                🌍 Simple Translator
+            </div>
+
+            <div class="lt-menu">
+
+                <a href="#">Home</a>
+
+                <a href="#">Features</a>
+
+                <a href="#">About</a>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Main -->
+    <main class="page">
+
+        <div class="card lt-glass">
+
+            <h1>Translator</h1>
+
+            <p class="sub">
+                Simple, fast language translation.
+            </p>
+
+            <!-- Language Row -->
+
+            <div class="row">
+
+                <select id="sourceLang">
+                </select>
+
+                <button class="swap" id="swapBtn">
+                    ⇄
+                </button>
+
+                <select id="targetLang">
+                </select>
+
+            </div>
+
+            <!-- Input -->
+
+            <div class="field">
+
+                <textarea
+                    id="inputText"
+                    placeholder="Enter text..."></textarea>
+
+                <div class="tools">
+
+                    <button id="speakInput">
+
+                        <i class="fa-solid fa-volume-high"></i>
+
+                    </button>
+
+                    <button id="copyInput">
+
+                        <i class="fa-solid fa-copy"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- Output -->
+
+            <div class="field">
+
+                <textarea
+                    id="outputText"
+                    placeholder="Translation..."
+                    readonly></textarea>
+
+                <div class="tools">
+
+                    <button id="speakOutput">
+
+                        <i class="fa-solid fa-volume-high"></i>
+
+                    </button>
+
+                    <button id="copyOutput">
+
+                        <i class="fa-solid fa-copy"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- Translate -->
+
+            <button
+                class="primary"
+                id="translateBtn">
+
+                Translate
+
+            </button>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
